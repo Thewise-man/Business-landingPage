@@ -28,7 +28,7 @@ export default function Navbar() {
             <Globe size={18} />
             <span>English</span>
           </button>
-          <button className="border border-[#1E1E56] text-[#1E1E56] font-semibold px-5 py-1.5 rounded-md hover:bg-[#1E1E56] hover:text-white transition-all">
+          <button className="border border-gray-600 shadow-md text-[#1E1E56] font-semibold px-5 py-1.5 rounded-md hover:bg-[#1E1E56] hover:text-white transition-all">
             Sign up
           </button>
         </div>
