@@ -5,6 +5,7 @@ import Cuate from "../../assets/cuate.png";
 import Twoguys from "../../assets/two-guys.png";
 import Plan from "../../assets/plan.png";
 import Socials from "../../assets/socials.png";
+import Pana from "../../assets/pana.png";
 import ToggleButton from "../../components/ToggleButton";
 import { Check, X } from "lucide-react";
 
@@ -115,7 +116,7 @@ function index() {
             </div>
           </div>
 
-          <div className="flex gap-10">
+          <div className="flex gap-20">
             <div className="w-80 p-8 border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl flex flex-col gap-5">
               <h1 className="font-bold text-3xl text-[#1E1E56] flex flex-col items-center">Starter</h1>
               <p className="flex flex-col items-center text-sm gap-1">On the other hand we denounce with <span>righteous indignation and dislike</span></p>
@@ -225,6 +226,23 @@ function index() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+
+      <section className="mt-25 px-50">
+        <div className="flex items-center gap-20 bg-linear-160 from-blue-600 to-pink-400 p-10 rounded-[30px] w-auto h-120">
+          <div className="flex flex-col gap-8">
+            <h1 className="font-bold text-4xl text-white flex flex-col gap-3 -mt-25">All users can share their discount <span>code with ten friends.</span> <span>Everyone Wins!!</span></h1>
+            <p className="text-gray-200 text-sm w-130">But I must explain to you how all this mistaken ideas of denouncing pleasure and praising pain was born and I will give you a complete account of the story</p>
+            <div>
+                <button className="border border-pink-400 text-white text-sm bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-pink-400 cursor-pointer">I Have a Code</button>
+            </div>
+
+          </div>
+            <div>
+              <img className="w-100" src={Pana} alt="refer a friend" />
+            </div>
         </div>
       </section>
     </div>
