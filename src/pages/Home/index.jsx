@@ -77,7 +77,7 @@ function index() {
                     <p className="w-110">On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized</p>
                     
                     <div>
-                        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent cursor-pointer">Get Started</button>
+                        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-black cursor-pointer">Get Started</button>
                     </div>
                 
                 </div>
@@ -92,7 +92,7 @@ function index() {
                     <p className="w-110">On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized</p>
                     
                     <div>
-                        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent cursor-pointer">Get Started</button>
+                        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-black cursor-pointer">Get Started</button>
                     </div>
                 
                 </div>
