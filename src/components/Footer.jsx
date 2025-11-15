@@ -1,7 +1,7 @@
 // components/Footer.jsx
 import React from 'react';
 import { SiFacebook, SiInstagram, SiX, SiLinkedin } from "react-icons/si";
-import Logo from "../assets/nav-logo.png"
+import Logo from "../assets/navLogo.png"
 
 const Footer = () => {
   return (
