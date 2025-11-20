@@ -12,13 +12,13 @@ import { Check, X } from "lucide-react";
 function index() {
   return (
     <div>
-      <section className="p-10 ">
-        <div className=" flex items-center gap-5 rounded-[30px] rounded-br-[290px] justify-between w-auto h-130 p-10 bg-linear-160 from-blue-600 to-pink-400 text-white">
-          <div className="flex flex-col gap-5 p-5"> 
-            <h1 className="text-white font-bold text-7xl ">
+      <section className="md:p-10 mt-10 p-5">
+        <div className=" md:flex md:items-center gap-5 rounded-[30px] rounded-br-[250px] md:rounded-br-[290px] md:justify-between md:w-auto  md:h-130 bg-linear-160 from-blue-600 to-pink-400 text-white">
+          <div className="flex flex-col gap-4 md:gap-5 p-5"> 
+            <h1 className="text-white font-bold text-4xl md:text-7xl ">
               Develop your skill
             </h1>
-            <h1 className="text-white font-bold text-7xl tracking-tight">
+            <h1 className="text-white font-bold text-4xl -mt-3 md:text-7xl tracking-tight">
               without negligence
             </h1>
             <p className="text-white ">
@@ -37,28 +37,28 @@ function index() {
             </div>
           </div>
 
-          <img className="w-150 h-103 -mb-30" src={Rafiki} alt="illustration" />
+          <img className=" w-100 md:w-150 md:h-103 md:-mb-30" src={Rafiki} alt="illustration" />
         </div>
       </section>
 
-      <section  className="mt-25 p-10">
-        <div className="w-auto h-130 p-10 flex items-center justify-between gap-5 "> 
-            <div className="w-80 pl-5 flex flex-col gap-5 -mt-65">
-                <h1 className="font-bold text-[#1E1E56] text-4xl">Why we are better than others</h1>
+      <section  className="mt-25 md:p-10 ">
+        <div className="flex flex-col gap-10 items-center md:w-auto md:flex-row md:h-130 md:p-10 md:flex md:items-center md:justify-between md:gap-5 "> 
+            <div className="w-80 md:pl-5 flex flex-col gap-5 md:-mt-65">
+                <h1 className="font-bold text-[#1E1E56] text-4xl ">Why we are better than others</h1>
                 <p>On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized</p>
             </div>
                 
-            <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 -mt-30">
+            <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 md:-mt-30">
                 <img className="w-50 h-50 " src={Amico} alt="illustration" />
                 <p className="text-[#1E1E56] -ml-35 w-20 font-bold">Convenient study time</p>
             </div>
 
-            <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-4 p-5 -mb-30">
+            <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-4 p-5 md:-mb-30">
                 <img className="w-50 h-50" src={Cuate} alt="illustration" />
                 <p className="text-[#1E1E56] -ml-35 w-20 font-bold">Assessment Done 1v1</p>
             </div>
 
-            <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 -mt-30">
+            <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 md:-mt-30">
                 <img className="w-50 h-50" src={Twoguys} alt="illustration" />
                 <p className="text-[#1E1E56] -ml-15 w-35 font-bold">Top notch Developers for Collaboration</p>
             </div>
@@ -66,8 +66,8 @@ function index() {
       </section>
 
       <section className="mt-25 p-10 bg-pink-100">
-        <div className="flex flex-col items-center p-10 w-auto gap-10">
-            <div className="flex items-center gap-30">
+        <div className="flex flex-col gap-20 items-center md:p-10 md:w-auto md:gap-10 ">
+            <div className="md:flex md:flex-row items-center gap-30">
                 <div> <img className="w-150 " src={Plan} alt="plan image" /> </div>
                 <div className="flex flex-col gap-3">
                     <span className="text-[#1E1E56] text-4xl font-bold">Developing Business</span>
@@ -83,7 +83,7 @@ function index() {
                 </div>
             </div>
 
-            <div className="flex items-center gap-30 ">
+            <div className="md:flex md:flex-row items-center gap-30 ">
                 <div className="flex flex-col gap-3">
                     <span className="text-[#1E1E56] text-4xl font-bold">You can conveniently</span>
                     <span className="text-[#1E1E56] text-4xl font-bold">connect your business</span>
@@ -104,19 +104,20 @@ function index() {
 
 
       <section className="mt-25 p-10">
-        <div className="flex flex-col items-center p-10 w-auto gap-10">
-          <div className="flex flex-col items-center justify-center gap-2">
+        <div className="flex md:flex-col items-center p-10 w-auto gap-10 flex-col">
+          <div className="flex flex-col items-center justify-center gap-2 ">
             <h1 className="font-bold text-5xl text-[#1E1E56]">Here are our Plans</h1>
             <p>On the other hand we denounce with righteous indignation and dislike men who are</p>
-            <p className="-mt-3">beguiled and demoralized</p>
-            <div className="flex gap-5">
+            <p className="-mt-8 -ml-22 md:-mt-3">beguiled and demoralized</p>
+            <div className="md:flex gap-5 flex mt-6 ">
               <span>Monthly</span>
               <span><ToggleButton/></span>
               <span>Yearly</span>
             </div>
           </div>
 
-          <div className="flex gap-20">
+          
+          <div className="flex flex-col gap-10 items-center justify-center md:flex-row md:gap-20 ">
             <div className="w-80 p-8 border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl flex flex-col gap-5">
               <h1 className="font-bold text-3xl text-[#1E1E56] flex flex-col items-center">Starter</h1>
               <p className="flex flex-col items-center text-sm gap-1">On the other hand we denounce with <span>righteous indignation and dislike</span></p>
@@ -230,11 +231,11 @@ function index() {
       </section>
 
 
-      <section className="mt-25 px-50">
-        <div className="flex items-center gap-20 bg-linear-160 from-blue-600 to-pink-400 p-10 rounded-[30px] w-auto h-120">
+      <section className="mt-25 md:px-50 p-5">
+        <div className="md:flex md:flex-row flex flex-col items-center gap-20 bg-linear-160 from-blue-600 to-pink-400 p-10 rounded-[30px] md:w-auto md:h-120">
           <div className="flex flex-col gap-8">
-            <h1 className="font-bold text-4xl text-white flex flex-col gap-3 -mt-25">All users can share their discount <span>code with ten friends.</span> <span>Everyone Wins!!</span></h1>
-            <p className="text-gray-200 text-sm w-130">But I must explain to you how all this mistaken ideas of denouncing pleasure and praising pain was born and I will give you a complete account of the story</p>
+            <h1 className="font-bold text-4xl text-white flex flex-col md:gap-3 md:-mt-25">All users can share their discount <span>code with ten friends.</span> <span>Everyone Wins!!</span></h1>
+            <p className="text-gray-200 text-sm md:w-130">But I must explain to you how all this mistaken ideas of denouncing pleasure and praising pain was born and I will give you a complete account of the story</p>
             <div>
                 <button className="border border-pink-400 text-white text-sm bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-pink-400 cursor-pointer">I Have a Code</button>
             </div>
