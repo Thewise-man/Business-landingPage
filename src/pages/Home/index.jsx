@@ -66,7 +66,7 @@ function index() {
       </section>
 
       <section className="mt-25 p-10 bg-pink-100">
-        <div className="flex flex-col gap-20 items-center md:p-10 md:w-auto md:gap-10 ">
+        <div className="flex flex-col gap-20 m-10 items-center md:p-10 md:w-auto md:gap-10 ">
             <div className="md:flex md:flex-row items-center gap-30">
                 <div> <img className="w-150 " src={Plan} alt="plan image" /> </div>
                 <div className="flex flex-col gap-3">
