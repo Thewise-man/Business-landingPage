@@ -11,7 +11,7 @@ import { Check, X } from "lucide-react";
 
 function index() {
   return (
-    <div>
+    <div className="w-full overflow-x-hidden">
       <section className="md:p-10 mt-10 p-5">
         <div className=" md:flex md:items-center gap-5 rounded-[30px] rounded-br-[250px] md:rounded-br-[290px] md:justify-between md:w-auto  md:h-130 bg-linear-160 from-blue-600 to-pink-400 text-white">
           <div className="flex flex-col gap-4 md:gap-5 p-5"> 
@@ -37,7 +37,7 @@ function index() {
             </div>
           </div>
 
-          <img className=" w-100 md:w-150 md:h-103 md:-mb-30" src={Rafiki} alt="illustration" />
+          <img className=" w-full  md:w-150 md:h-103 md:-mb-30" src={Rafiki} alt="illustration" />
         </div>
       </section>
 
@@ -65,42 +65,60 @@ function index() {
         </div>
       </section>
 
-      <section className="mt-25 p-10 bg-pink-100">
-        <div className="flex flex-col gap-20 m-10 items-center md:p-10 md:w-auto md:gap-10 ">
-            <div className="md:flex md:flex-row items-center gap-30">
-                <div> <img className="w-150 " src={Plan} alt="plan image" /> </div>
-                <div className="flex flex-col gap-3">
-                    <span className="text-[#1E1E56] text-4xl font-bold">Developing Business</span>
-                    <span className="text-[#1E1E56] text-4xl font-bold">Strategises to grow</span>
-                    <span className="text-pink-400 text-4xl font-bold">your Organisation</span>
+      <section className="mt-25 bg-pink-100">
+  <div className="flex flex-col gap-16 p-6 md:p-10 md:gap-10 items-center">
 
-                    <p className="w-110">On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized</p>
-                    
-                    <div>
-                        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-black cursor-pointer">Get Started</button>
-                    </div>
-                
-                </div>
-            </div>
+    {/* BLOCK 1 */}
+    <div className="flex flex-col md:flex-row items-center justify-center md:gap-20 gap-10 text-center md:text-left">
+      
+      <img 
+        className="w-full max-w-xs md:max-w-[300px]" 
+        src={Plan} 
+        alt="plan image" 
+      />
 
-            <div className="md:flex md:flex-row items-center gap-30 ">
-                <div className="flex flex-col gap-3">
-                    <span className="text-[#1E1E56] text-4xl font-bold">You can conveniently</span>
-                    <span className="text-[#1E1E56] text-4xl font-bold">connect your business</span>
-                    <span className="text-pink-400 text-4xl font-bold">on all social media</span>
+      <div className="flex flex-col gap-3 max-w-md">
+        <span className="text-[#1E1E56] text-3xl md:text-4xl font-bold">Developing Business</span>
+        <span className="text-[#1E1E56] text-3xl md:text-4xl font-bold">Strategises to grow</span>
+        <span className="text-pink-400 text-3xl md:text-4xl font-bold">your Organisation</span>
 
-                    <p className="w-110">On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized</p>
-                    
-                    <div>
-                        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-black cursor-pointer">Get Started</button>
-                    </div>
-                
-                </div>
-                <div><img className="w-150" src={Socials} alt="socials image" /></div>
-            </div>
-        </div>
-        
-      </section>
+        <p className="text-gray-700">
+          On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized
+        </p>
+
+        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-black">
+          Get Started
+        </button>
+      </div>
+    </div>
+
+    {/* BLOCK 2 */}
+    <div className="flex flex-col md:flex-row items-center md:gap-20 gap-10 text-center md:text-left">
+
+      <div className="flex flex-col gap-3 max-w-md">
+        <span className="text-[#1E1E56] text-3xl md:text-4xl font-bold">You can conveniently</span>
+        <span className="text-[#1E1E56] text-3xl md:text-4xl font-bold">connect your business</span>
+        <span className="text-pink-400 text-3xl md:text-4xl font-bold">on all social media</span>
+
+        <p className="text-gray-700">
+          On the other hand we denounce with righteous indignation and dislike men who are beguiled and demoralized
+        </p>
+
+        <button className="border border-pink-400 text-white bg-pink-400 font-semibold px-5 py-1.5 rounded-md hover:bg-transparent hover:text-black">
+          Get Started
+        </button>
+      </div>
+
+      <img 
+        className="w-full max-w-xs md:max-w-[300px]" 
+        src={Socials} 
+        alt="socials image" 
+      />
+    </div>
+
+  </div>
+</section>
+
 
 
       <section className="mt-25 p-10">
