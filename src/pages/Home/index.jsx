@@ -46,7 +46,7 @@ function index() {
         </div>
       </section>
 
-      <section id="products" className="mt-25 md:p-10 min-h-screen scroll-mt-28 ">
+      <section id="products" className="md:mt-25 md:p-10 min-h-screen scroll-mt-28 ">
         <div className="flex flex-col gap-10 items-center md:w-auto md:flex-row md:h-130 md:p-10 md:flex md:items-center md:justify-between md:gap-5 ">
           <div className="w-80 md:pl-5 flex flex-col gap-5 md:-mt-65">
             <h1 className="font-bold text-[#1E1E56] text-4xl ">
