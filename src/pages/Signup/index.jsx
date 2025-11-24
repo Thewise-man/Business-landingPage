@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { supabase } from "../../lib/supaBaseClient";
 
@@ -8,6 +8,21 @@ export default function Index() {
   const [isSignup, setIsSignup] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
+
+  // Scroll to top on mobile when component mounts
+  useEffect(() => {
+    if (window.innerWidth <= 768) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, []);
+
+  // Scroll to top on mobile when toggling between Login/Signup
+  const toggleForm = () => {
+    setIsSignup(!isSignup);
+    if (window.innerWidth <= 768) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -88,7 +103,7 @@ export default function Index() {
         <p className="text-center text-gray-600 mt-6">
           {isSignup ? "Already have an account?" : "Don't have an account?"}{" "}
           <span
-            onClick={() => setIsSignup(!isSignup)}
+            onClick={toggleForm}
             className="text-blue-600 hover:underline cursor-pointer font-medium"
           >
             {isSignup ? "Login" : "Sign Up"}
