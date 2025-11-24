@@ -9,19 +9,15 @@ export default function Index() {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  // Scroll to top on mobile when component mounts
+   // Scroll to top on mount (desktop & mobile)
   useEffect(() => {
-    if (window.innerWidth <= 768) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  // Scroll to top on mobile when toggling between Login/Signup
+  // Toggle form and scroll to top
   const toggleForm = () => {
     setIsSignup(!isSignup);
-    if (window.innerWidth <= 768) {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleSubmit = async (e) => {
