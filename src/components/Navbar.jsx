@@ -90,7 +90,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 shadow-md">
-          <ul className="flex flex-col px-6 py-4 space-y-3 text-[#1E1E56] font-medium">
+          <ul className="flex flex-col px-6 py-4 text-center space-y-3 text-[#1E1E56] font-medium">
             <li>
               <HashLink smooth to="/#overview" onClick={() => setMenuOpen(false)} >
                 Overview
@@ -122,10 +122,10 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <div className="px-6 pb-4">
-            <button className="flex items-center text-[#1E1E56] space-x-1 hover:text-blue-700 mb-2">
+          <div className="px-6 pb-4 text-center">
+            <button className="flex mx-auto text-[#1E1E56] space-x-1 text-center hover:text-blue-700 mb-3">
               <Globe size={18} />
-              <span>English</span>
+              <span className="-mt-1">English</span>
             </button>
             {user ? (
             <>
