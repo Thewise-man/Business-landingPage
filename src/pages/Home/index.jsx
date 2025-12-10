@@ -8,6 +8,7 @@ import Socials from "../../assets/socials.png";
 import Pana from "../../assets/pana.png";
 import ToggleButton from "../../components/ToggleButton";
 import { Check, X } from "lucide-react";
+import { motion, easeIn, easeInOut } from "framer-motion";
 
 function index() {
   return (
@@ -58,21 +59,53 @@ function index() {
             </p>
           </div>
 
-          <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 md:-mt-30">
+          <motion.div
+            animate={{ y:[0, -50, 0]}}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 5, repeat: Infinity, ease: easeInOut  }}
+            className="hidden border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 lg:flex flex-col items-center gap-2 p-5 md:-mt-30">
+            <img className="w-50 h-50 " src={Amico} alt="illustration" />
+            <p className="text-[#1E1E56] -ml-35 w-20 font-bold">
+              Convenient study time
+            </p>
+          </motion.div>
+          <div className="lg:hidden border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 md:-mt-30">
             <img className="w-50 h-50 " src={Amico} alt="illustration" />
             <p className="text-[#1E1E56] -ml-35 w-20 font-bold">
               Convenient study time
             </p>
           </div>
 
-          <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-4 p-5 md:-mb-30">
+          <motion.div
+            animate={{ y:[0, 50, 0]}}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 5, repeat: Infinity, ease: easeInOut  }} 
+            className="hidden border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 lg:flex flex-col items-center gap-4 p-5 md:-mb-30">
+            <img className="w-50 h-50" src={Cuate} alt="illustration" />
+            <p className="text-[#1E1E56] -ml-35 w-20 font-bold">
+              Assessment Done 1v1
+            </p>
+          </motion.div>
+          <div className="lg:hidden border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-4 p-5 md:-mb-30">
             <img className="w-50 h-50" src={Cuate} alt="illustration" />
             <p className="text-[#1E1E56] -ml-35 w-20 font-bold">
               Assessment Done 1v1
             </p>
           </div>
 
-          <div className="border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 md:-mt-30">
+          <motion.div
+            animate={{ y:[0, -50, 0]}}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 5, repeat: Infinity, ease: easeInOut  }} className=" hidden border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 lg:flex flex-col items-center gap-2 p-5 md:-mt-30">
+            <img className="w-50 h-50" src={Twoguys} alt="illustration" />
+            <p className="text-[#1E1E56] -ml-15 w-35 font-bold">
+              Top notch Developers for Collaboration
+            </p>
+          </motion.div>
+          <div className="lg:hidden border border-white shadow-[0_0_10px_2px_rgba(0,0,0,0.2)] rounded-3xl w-70 h-80 flex flex-col items-center gap-2 p-5 md:-mt-30">
             <img className="w-50 h-50" src={Twoguys} alt="illustration" />
             <p className="text-[#1E1E56] -ml-15 w-35 font-bold">
               Top notch Developers for Collaboration
