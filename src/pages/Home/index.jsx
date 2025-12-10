@@ -184,11 +184,15 @@ function index() {
             <h1 className="font-bold text-5xl text-[#1E1E56]">
               Here are our Plans
             </h1>
-            <p>
+            <p className="hidden md:block">
               On the other hand we denounce with righteous indignation and
               dislike men who are
             </p>
-            <p className="-mt-8 -ml-22 md:-mt-3">beguiled and demoralized</p>
+            <p className="-mt-8 -ml-22 md:-mt-3 hidden md:block">beguiled and demoralized</p>
+             <p className="lg:hidden">
+              On the other hand we denounce with righteous indignation and
+              dislike men who are beguiled and demoralized
+            </p>
             <div className="md:flex gap-5 flex mt-6 ">
               <span>Monthly</span>
               <span>
@@ -207,6 +211,7 @@ function index() {
                 On the other hand we denounce with{" "}
                 <span>righteous indignation and dislike</span>
               </p>
+              
               <div className="flex items-center justify-center gap-2">
                 {" "}
                 <h1 className="font-bold text-6xl text-pink-400">50$</h1>{" "}
