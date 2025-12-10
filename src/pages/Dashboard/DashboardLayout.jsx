@@ -31,7 +31,7 @@ export default function DashboardLayout() {
   };
 
   return (
-    <div className="flex min-h-screen bg-gray-100 relative">
+    <div className="flex min-h-screen bg-gray-200 relative">
       {/* Mobile Overlay */}
       {isOpen && (
         <div
@@ -42,15 +42,15 @@ export default function DashboardLayout() {
 
       {/* Sidebar */}
       <aside
-        className={`fixed z-40 inset-y-0 left-0 w-64 bg-[#0a0e1a] text-white transform 
+        className={`fixed z-40 inset-y-0 left-0 w-64 bg-[#1E1E56] text-white transform 
         ${isOpen ? "translate-x-0" : "-translate-x-full"} 
         transition-transform duration-300 md:translate-x-0`}
       >
-        <div className="h-16 flex items-center justify-center border-b border-gray-700">
+        <div className="h-16 flex items-center justify-center border-b  border-blue-950 ">
           <h2 className="text-xl font-bold">My Dashboard</h2>
         </div>
 
-        <nav className="flex flex-col gap-4 p-6">
+        <nav className="flex flex-col gap-4 p-6 font-bold ml-10">
           <NavLink to="/dashboard" onClick={() => setIsOpen(false)} end>Overview</NavLink>
           <NavLink to="/dashboard/frontend" onClick={() => setIsOpen(false)}>Frontend</NavLink>
           <NavLink to="/dashboard/backend" onClick={() => setIsOpen(false)}>Backend</NavLink>
